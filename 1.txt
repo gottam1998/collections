@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class AvgRuns {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> l=new ArrayList<>();
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		double avgRuns;
+		int sum=0;
+		for(int i=0;i<n;i++) {
+			int r=s.nextInt();
+			l.add(r);
+		}
+		for(int j=0;j<n;j++) {
+			sum=sum+l.get(j);
+		}
+		avgRuns=(double)sum/n;
+		System.out.println(sum);
+		System.out.println(avgRuns);
+	}
+
+}
